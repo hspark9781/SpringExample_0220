@@ -49,7 +49,7 @@ public class UserController {
 		// 조회된 결과를 jsp 에서 쓸수 있게 셋팅
 		model.addAttribute("user", lastUser);
 		
-		return "/jsp/lastuser";
+		return "jsp/lastuser";
 	}
 	
 	
