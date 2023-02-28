@@ -16,6 +16,8 @@ public interface UserDAO {
 
 	public User selectLastUser();
 	
+	public int InsertUserByObject(User user);
+	
 }
 
 
