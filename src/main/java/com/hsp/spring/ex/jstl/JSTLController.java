@@ -32,11 +32,23 @@ public class JSTLController {
 		// List<Map>
 		// 사용자 정보 map(이름, 나이, 취미)
 		List<Map<String, Object>> userList = new ArrayList<>();
-		Map<String, Object> map = new HashMap<>();
-		map.put("name", "박현석");
-		map.put("age", 28);
-		map.put("hobby", "댄스");
-		userList.add(map);
+		Map<String, Object> user = new HashMap<>();
+		user.put("name", "박현석");
+		user.put("age", 27);
+		user.put("hobby", "댄스");
+		userList.add(user);
+		
+		user = new HashMap<>();
+		user.put("name", "김바다");
+		user.put("age", 5);
+		user.put("hobby", "사냥");
+		userList.add(user);
+		
+		
+		model.addAttribute("userList", userList);
+		
+		
+		
 		
 		
 		model.addAttribute("fruitList", fruitList);
