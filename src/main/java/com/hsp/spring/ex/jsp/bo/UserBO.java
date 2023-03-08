@@ -1,5 +1,7 @@
 package com.hsp.spring.ex.jsp.bo;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,10 @@ public class UserBO {
 	
 	public int addUserByObject(User user) {
 		return userDAO.InsertUserByObject(user);
+	}
+	
+	public List<User> getUserList() {
+		return userDAO.selectUserList();
 	}
 	
 

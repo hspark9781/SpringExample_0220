@@ -1,5 +1,7 @@
 package com.hsp.spring.ex.jsp.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -18,6 +20,8 @@ public interface UserDAO {
 	
 	public int InsertUserByObject(User user);
 	
+	
+	public List<User> selectUserList();
 }
 
 
